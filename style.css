@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+  
+/* Styling the navbar */
+.navbar {
+    background-color: black;
+    /* color:#213547; */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+}
+
+/* Styling the logo */
+.nav-left {
+    flex: 1; /* Taking up remaining space */
+}
+
+.nav-left img {
+    width: 100px;
+    height: auto;
+}
+
+/* Styling the right navigation links */
+.nav-right {
+    flex: 1; /* Taking up remaining space */
+    text-align: right; /* Aligning links to the right */
+}
+
+.nav-right a {
+    text-decoration: none;
+    margin-right:15px;
+    margin-left: 20px; 
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; 
+}
+
+/* Adding hover effect */
+.nav-right a:hover {
+    color: yellow;
+}
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+    .nav-right {
+        flex-direction: row; 
+    }
+
+    .nav-right a {
+        margin-bottom: 0; 
+        margin-left: 20px;
+    }
+}
+/* login */
+
+
+/**main**/
+.main-content{
+    background-image: url(images/ambiencepic4.jpg);
+    height:500px;
+    background-size:cover;
+    justify-content:center;
+    display:flex;
+    align-items: flex-end;
+    
+}
+.main-msg{
+    background-color: white;
+    color:black;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:2rem;
+    padding-top: 15px;
+    width:80%;
+    margin-top:20px;
+    margin-bottom:25px;
+    border-radius: 60px 70px 40px 140px;
+    box-shadow: 5px 5px;
+    
+}
+h2{
+
+    background-color: greenyellow;
+    text-decoration:none ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    text-align:center;
+    margin-top:15px;
+    
+}
+.menu-section{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap:wrap;
+    
+}
+.box{
+    /**border:2px solid black;**/
+    height:470px;
+    width:30%;
+    background-color: white;
+    padding:20px 0px 20px 0px;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.box-img {
+    height:300px;
+    background-size: cover;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background-position: center;
+
+}
+@media (min-width: 576px) {
+    .box-img {
+        height: 250px; 
+    }
+}
+.box-content {
+    margin-left:1rem;
+    margin-right:1rem;
+    
+}
+.box-content h3{
+    font-size:1.2rem;
+}
+
+.box-content p {
+    color:#007185;
+    font-size:1rem;
+}
+
+.about-content{
+  
+    background-color:#f54260;
+}
+.about-content img{ 
+    border-radius:30%;
+    box-shadow: 5px 5px;
+    /* transition: all 2s ease-in-out; */
+}
+
+
+.about-msge:hover{
+    transition: all 2s ease-in-out;
+    border-radius: 50%;
+}
+.btn .btn-primary .btn-lg px-4{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    /* height: 50px; */
+    width: 100px;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Center the footer horizontally */
+    align-items: center; /* Center the footer vertically */
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+footer p {
+    color: rgba(250, 250, 4, 0.726);
+    text-align: center;
+    font-size: 110%;
+    margin-top:5px;
+}
+.about-msge{
+    background-color:#25d9cd;
+}
+.menu-section{
+    background-color:#fc03ca;
+}
+#show-details-btn {
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 100;
+    cursor: pointer;
+}
+
+.reservation{
+    background-image: url('images/koreantable.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    height: 80vh; /* Adjust the height as needed */
+    /* Add other styles as needed */
+}
+.reservation-content{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #fff155, #f50a25);
+    color:rgb(10, 10, 10);
+    width:90%;
+    max-width:300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 16px; 
+    margin-top:500px;
+    border: 2px solid black; 
+    position:relative;
+    align-items: center;
+    border-radius: 15px;
+    font-size: medium;
+    height: 80px; 
+    line-height: 80px; 
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reservation-content p{
+    margin-top:5px;
+    padding: 25px 15px; 
+   
+    /* content: '';
+    position: absolute; */
+    
+    border-radius: 15px; 
+}
+@media screen and (max-width: 600px) {
+    .reservation-content {
+        font-size: 14px; 
+    }
+}
+.wrapper {
+    background-image:linear-gradient(#52d61a, #d90fa7);
+    margin: 80px auto 0;
+    padding: 50px 100px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 40px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-box input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #349feb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #4ac1f0;
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+    }
+    
+    .input-box input,
+    .submit-btn {
+        width: 100%; 
+    }
+}
+#gallery-section {
+    background-image: linear-gradient(45deg, #8B008B, #d9fb16); 
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    transition: background-image 0.5s ease; 
+}
+#gallery-section:hover {
+    background-image: linear-gradient(rgb(48, 181, 172), rgb(43, 220, 43)); 
+   
+}
+  
+.container {
+    background-color: black; 
+    padding-top: 50px; /* Adjust padding as needed */
+    padding-bottom: 50px; /* Adjust padding as needed */
+    margin-bottom: 20px;
+    color:white;
+    border-radius: 15px;
+    
+}
+.container .btn {
+    color: white; /* Set text color to white */
+}
+.container .btn:hover{
+    color: yellow; /* Set text color to white */
+}
+.container2 {
+    max-width: 600px;
+    margin:0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top:30px;
+    margin-bottom:30px;
+    background-image: linear-gradient(orange,cyan);
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+  }
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:20px;
+}
+  
+textarea {
+    height: 100px;
+}
+  
+  input[type="submit"] {
+    background-color: #d71b1b;
+    color: white;
+    padding: 10px 20px;
+    border: 2px black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+  
+  input[type="submit"]:hover {
+    background-color: rgb(24, 24, 24);
+}
+.feed{
+    background-color: rgb(255,0,90);
+   
+    padding: 20px 0;
+}
+@media screen and (max-width: 600px) {
+    .container2 {
+      padding: 10px;
+    }
+  }
+
+.contact{
+    background-image: url('images/contactpic.jpg');
+    height:500px;
+    width:100%;
+}
+.contact-details{
+    text-align:center;
+    font-size:1rem;
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+    color:whitesmoke;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#ContactUs{
+    color:yellow;
+}
+.feedback{
+    text-align:center;
+    font-size:1rem;
+    font-family:'Times New Roman', Times, serif;
+    background-color:#fc036f;
+    color:black;
+    font-weight:bold;
+    margin-bottom:20px;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+.feedback.btn.btn-primary {
+    background-color: blue;
+    color: white;
+    height:50px;
+    border: 2px solid blue;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+    /* Add more styles as needed */
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust height as needed */
+    margin-top:25px;
+    background-color:
+    #03fcb1;
+    background-size: cover;
+    background-image: url('images/locationpic.jpeg');
+}
+
+.map-details {
+    text-align: center;
+}
+
+#map {
+    width: 80%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+}
+
+#feedbackForm {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.map-container h4{
+    color:white;
+}
+.btn.btn-primary {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    height:50px;
+    width:100px;
+}
+.end-msg{
+    color:#f56642;
+    background-color: whitesmoke;
+    font-weight:bold;
+}
+.korean-food{
+    background-color:#dceb34;
+    color:black;
+    
+}
+#lead .text-muted{
+    color:white;
+
+}
+.korean-food h1{
+    color:red;
+    padding-bottom: 20px;
+}
+.korean-food .btn.btn-primary {
+    padding-bottom: 20px;
+}
+.korean-food img{
+   
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height:100%px;
+    width:50%;
+    margin-left:90px;
+    padding-bottom:20px;
+    border-radius: 30%;
+  
+}
+
+.reserve-now{
+    height:300px;
+    width:25%;
+    background-color: white;
+    padding:20px 0px 20px 0px;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-weight: bold;
+    border-radius: 15px;
+    align-items: center;
+    display:flex-end;
+    text-align:center;
+}
+
